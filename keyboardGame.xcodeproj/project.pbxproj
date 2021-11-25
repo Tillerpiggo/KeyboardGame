@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024928D22750136D002FAA46 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D12750136D002FAA46 /* GameView.swift */; };
+		024928D32750136D002FAA46 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D12750136D002FAA46 /* GameView.swift */; };
+		024928D5275013CD002FAA46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D4275013CD002FAA46 /* ContentView.swift */; };
+		024928D6275013CD002FAA46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D4275013CD002FAA46 /* ContentView.swift */; };
+		024928D827501414002FAA46 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D727501414002FAA46 /* GameViewModel.swift */; };
+		024928D927501414002FAA46 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928D727501414002FAA46 /* GameViewModel.swift */; };
+		024928DB27501599002FAA46 /* KeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928DA27501599002FAA46 /* KeyboardViewModel.swift */; };
+		024928DC27501599002FAA46 /* KeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928DA27501599002FAA46 /* KeyboardViewModel.swift */; };
+		024928E127501828002FAA46 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928E027501828002FAA46 /* WordViewModel.swift */; };
+		024928E227501828002FAA46 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024928E027501828002FAA46 /* WordViewModel.swift */; };
 		029A7DA5274F69EF00C3FD1B /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A7DA4274F69EF00C3FD1B /* WordView.swift */; };
 		029A7DA6274F69EF00C3FD1B /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A7DA4274F69EF00C3FD1B /* WordView.swift */; };
 		02EEF167274A08E100DDABD9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EEF166274A08E100DDABD9 /* Tests_iOS.swift */; };
@@ -41,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024928D12750136D002FAA46 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		024928D4275013CD002FAA46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		024928D727501414002FAA46 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		024928DA27501599002FAA46 /* KeyboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewModel.swift; sourceTree = "<group>"; };
+		024928E027501828002FAA46 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		029A7DA4274F69EF00C3FD1B /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		02EEF14E274A08E100DDABD9 /* keyboardGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardGameApp.swift; sourceTree = "<group>"; };
 		02EEF14F274A08E100DDABD9 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
@@ -89,6 +104,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024928DD275015A9002FAA46 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				024928D727501414002FAA46 /* GameViewModel.swift */,
+				024928DA27501599002FAA46 /* KeyboardViewModel.swift */,
+				024928E027501828002FAA46 /* WordViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		024928DE275015AF002FAA46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				024928D4275013CD002FAA46 /* ContentView.swift */,
+				024928D12750136D002FAA46 /* GameView.swift */,
+				02EEF14F274A08E100DDABD9 /* KeyboardView.swift */,
+				029A7DA4274F69EF00C3FD1B /* WordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		024928DF275015B3002FAA46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02EEF18A274A0AAE00DDABD9 /* Keyboard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		02EEF148274A08E100DDABD9 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				02EEF14E274A08E100DDABD9 /* keyboardGameApp.swift */,
-				02EEF14F274A08E100DDABD9 /* KeyboardView.swift */,
-				029A7DA4274F69EF00C3FD1B /* WordView.swift */,
-				02EEF18A274A0AAE00DDABD9 /* Keyboard.swift */,
+				024928DE275015AF002FAA46 /* Views */,
+				024928DD275015A9002FAA46 /* ViewModels */,
+				024928DF275015B3002FAA46 /* Models */,
 				02EEF150274A08E100DDABD9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -307,10 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024928E127501828002FAA46 /* WordViewModel.swift in Sources */,
 				029A7DA5274F69EF00C3FD1B /* WordView.swift in Sources */,
 				02EEF178274A08E100DDABD9 /* KeyboardView.swift in Sources */,
+				024928D5275013CD002FAA46 /* ContentView.swift in Sources */,
 				02EEF18B274A0AAE00DDABD9 /* Keyboard.swift in Sources */,
 				02EEF176274A08E100DDABD9 /* keyboardGameApp.swift in Sources */,
+				024928D22750136D002FAA46 /* GameView.swift in Sources */,
+				024928D827501414002FAA46 /* GameViewModel.swift in Sources */,
+				024928DB27501599002FAA46 /* KeyboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024928E227501828002FAA46 /* WordViewModel.swift in Sources */,
 				029A7DA6274F69EF00C3FD1B /* WordView.swift in Sources */,
 				02EEF179274A08E100DDABD9 /* KeyboardView.swift in Sources */,
+				024928D6275013CD002FAA46 /* ContentView.swift in Sources */,
 				02EEF18C274A0AAE00DDABD9 /* Keyboard.swift in Sources */,
 				02EEF177274A08E100DDABD9 /* keyboardGameApp.swift in Sources */,
+				024928D32750136D002FAA46 /* GameView.swift in Sources */,
+				024928D927501414002FAA46 /* GameViewModel.swift in Sources */,
+				024928DC27501599002FAA46 /* KeyboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
